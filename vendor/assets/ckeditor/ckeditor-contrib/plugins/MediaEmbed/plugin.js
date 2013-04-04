@@ -9,13 +9,15 @@
 *
 * @author Fabian Vogelsteller [frozeman.de]
 * @version 0.4
+*
 */
 ( function() {
-    CKEDITOR.plugins.add( 'mediaembed',
+    CKEDITOR.plugins.add( 'MediaEmbed',
     {
         init: function( editor )
         {
            var me = this;
+//           CKEDITOR.dialog.add( 'MediaEmbedDialog', function (editor)
            CKEDITOR.dialog.add( 'MediaEmbedDialog', function (instance)
            {
               return {
@@ -46,9 +48,9 @@
                             }
                         }
                         // console.log(this.getContentElement( 'iframe', 'embedArea' ).getValue());
-                        div = instance.document.createElement('div');
-                        div.setHtml(this.getContentElement('iframe', 'embedArea').getValue());
-                        instance.insertElement(div);
+                        var embed_container = instance.document.createElement('p');
+                        embed_container.setHtml(this.getContentElement('iframe', 'embedArea').getValue());
+                        instance.insertElement(embed_container);
                   }
               };
            } );
@@ -60,7 +62,7 @@
                 label: 'Embed Media',
                 command: 'MediaEmbed',
                 icon: this.path + 'images/icon.png',
-                toolbar: 'mediaembed'
+                toolbar: 'MediaEmbed'
             } );
         }
     } );
