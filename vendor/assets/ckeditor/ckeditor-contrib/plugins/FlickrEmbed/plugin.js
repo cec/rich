@@ -5,13 +5,11 @@
 * Plugin name:      FlickrEmbed
 * Menu button name: FlickrEmbed
 *
-*
 */
-
-console("I'm being called!");
 ( function() {
     CKEDITOR.plugins.add( 'FlickrEmbed',
     {
+        icons: 'flickrembed',
         init: function( editor )
         {
            var me = this;
