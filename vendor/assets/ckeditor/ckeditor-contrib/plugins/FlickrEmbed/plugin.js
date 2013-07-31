@@ -8,7 +8,7 @@
 *
 */
 
-alert("I'm being called!");
+console("I'm being called!");
 ( function() {
     CKEDITOR.plugins.add( 'FlickrEmbed',
     {
