@@ -48,14 +48,16 @@ var CKBUILDER_CONFIG = {
 		'font' : 1,
 		'forms' : 1,
 		'format' : 1,
-		'htmlwriter' : 1,
 		'horizontalrule' : 1,
+		'htmlwriter' : 1,
 		'iframe' : 1,
 		'wysiwygarea' : 1,
 		'image' : 1,
-		'indent' : 1,
+		'indentblock' : 1,
+		'indentlist' : 1,
 		'smiley' : 1,
 		'justify' : 1,
+		'language' : 1,
 		'link' : 1,
 		'list' : 1,
 		'liststyle' : 1,
@@ -92,12 +94,14 @@ var CKBUILDER_CONFIG = {
 		'fakeobjects' : 1,
 		'richcombo' : 1,
 		'listblock' : 1,
+		'indent' : 1,
 		'menubutton' : 1,
+		'autogrow' : 1,
 		'codemirror' : 1,
-		'iframedialog' : 1,
-		'stylesheetparser' : 1
+		'divarea' : 1,
+		'wordcount' : 1
 	},
 	languages : {
-		'en' : 1,
+		'en' : 1
 	}
 };
